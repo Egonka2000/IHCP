@@ -1,0 +1,18 @@
+train:
+  input: 'datasets/train_temp_data.bin'
+  output: 'datasets/train_htc_data.bin'
+validate:
+  input: 'datasets/valid_temp_data.bin'
+  output: 'datasets/valid_htc_data.bin'
+test:
+  input: 'datasets/test_temp_data.bin'
+  output: 'datasets/test_htc_data.bin'
+learning_rate: 0.01
+batch_size: 64
+hidden_layers: [85, 50]
+train_mode: False
+steps: 10000
+grid: 10
+k: 3
+lamb: 0.002
+lamb_entropy: 5.0
